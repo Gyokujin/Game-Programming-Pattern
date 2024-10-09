@@ -6,6 +6,13 @@ public class Switch : MonoBehaviour
 {
     public ISwitchable client;
 
+    void Awake()
+    {
+        client = GetComponent<ISwitchable>();
+        Toggle();
+        Toggle();
+    }
+
     public void Toggle()
     {
         if (client.IsActive)
