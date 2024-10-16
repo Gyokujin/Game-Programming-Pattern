@@ -4,5 +4,10 @@ using UnityEngine;
 
 public interface IAttackType
 {
+    public enum AttackType
+    {
+        Base, Magic, Special
+    }
+
     public void Attack();
 }

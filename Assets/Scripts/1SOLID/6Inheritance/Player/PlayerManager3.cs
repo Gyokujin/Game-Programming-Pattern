@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager3 : MonoBehaviour
 {
     [Header("Attack Type")]
     private IAttackType[] attackTypes;
@@ -16,20 +16,17 @@ public class PlayerManager : MonoBehaviour
 
     [Header("Player")]
     [SerializeField]
-    private PlayerAttack[] attackablePlayer;
+    private PlayerAttack2 player;
 
     void Awake()
     {
         attackTypes = new IAttackType[] { baseAttack, magicAttack, specialAttack };
     }
 
-    void Start()
+    public void PlayerSpawn()
     {
-        foreach (PlayerAttack player in attackablePlayer)
-        {
-            int attackType = Random.Range(0, attackTypes.Length);
-            player.SetAttackType(attackTypes[attackType]);
-            player.Attack();
-        }
+        int attackType = Random.Range(0, attackTypes.Length);
+        PlayerAttack2 spawnPlayer = new(attackTypes[attackType]);
+        spawnPlayer.Attack();
     }
 }
