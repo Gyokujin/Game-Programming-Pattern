@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class SingletonPattern1 : MonoBehaviour
+public class SingletonClass : MonoBehaviour
 {
-    public static SingletonPattern1 instance { get; private set; } // 읽기는 가능하지만, 쓰기를 막아둔다.
+    public static SingletonClass instance { get; private set; } // 읽기는 가능하지만, 쓰기를 막아둔다.
 
     [Header("Data")]
     private int data1;

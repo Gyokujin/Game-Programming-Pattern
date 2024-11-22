@@ -1,18 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class DesignPattern : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+// 디자인 패턴 : 프로그램을 설계할 때 발생했던 문제점들을 객체 간의 상호 관계 등을 이용하여 해결할 수 있도록 하나의 ‘규약’ 형태로 만들어 놓은 것
+// 싱글톤 패턴(Singleton Pattern) : 하나의 클래스에 오직 하나의 독립적인 인스턴스만 가지는 패턴
+// 팩토리 패턴(Factory Pattern) : 객체 생성 부분을 떼어내 추상화한 패턴
+// 전략 패턴(Strategy Pattern) : 객체의 행위를 바꾸고 싶은 경우 ‘직접’ 수정하지 않고 ‘캡슐화한 알고리즘을’을 컨텍스트 안에서 바꿔주는 패턴
