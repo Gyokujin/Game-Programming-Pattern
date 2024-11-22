@@ -29,6 +29,7 @@ public class StrategyEditor : MonoBehaviour
         itemB.Init("Fish", 70);
         shoppingCart.AddItem(itemB);
 
+        // 카드를 사용하여 계산
         kakaoCard.ShowCard();
         shoppingCart.Pay(kakaoCard);
 
