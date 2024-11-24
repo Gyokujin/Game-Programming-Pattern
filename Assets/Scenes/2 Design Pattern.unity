@@ -122,6 +122,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &171229834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171229835}
+  - component: {fileID: 171229836}
+  m_Layer: 0
+  m_Name: 4 Observer Pattern
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &171229835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171229834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &171229836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171229834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f3f85ddea224ff42a3eea371df09104, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &266137422
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +221,7 @@ GameObject:
   - component: {fileID: 314932904}
   - component: {fileID: 314932903}
   m_Layer: 0
-  m_Name: 2 FactoryPattern
+  m_Name: 2 Factory Pattern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,12 +272,12 @@ GameObject:
   - component: {fileID: 487865604}
   - component: {fileID: 487865605}
   m_Layer: 0
-  m_Name: 3 StrategyPattern
+  m_Name: 3 Strategy Pattern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &487865604
 Transform:
   m_ObjectHideFlags: 0
@@ -470,7 +514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775269551}
   m_Layer: 0
-  m_Name: 1 SingletonPattern
+  m_Name: 1 Singleton Pattern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -681,3 +725,4 @@ SceneRoots:
   - {fileID: 775269551}
   - {fileID: 314932904}
   - {fileID: 487865604}
+  - {fileID: 171229835}
