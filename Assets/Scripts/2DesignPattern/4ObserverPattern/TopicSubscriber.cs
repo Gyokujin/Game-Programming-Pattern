@@ -13,7 +13,7 @@ public class TopicSubscriber : Observer
         this.topic = topic;
     }
 
-    public void Update()
+    public void UpdateMessage()
     {
         string msg = topic.GetUpdate().ToString();
         Debug.Log(name + ":: got message >> " + msg);

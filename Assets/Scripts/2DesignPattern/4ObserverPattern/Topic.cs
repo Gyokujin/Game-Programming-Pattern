@@ -21,7 +21,7 @@ public class Topic : Subject
     public void NotifyObservers()
     {
         foreach (Observer obj in observers)
-            obj.Update();
+            obj.UpdateMessage();
     }
 
     public object GetUpdate()
